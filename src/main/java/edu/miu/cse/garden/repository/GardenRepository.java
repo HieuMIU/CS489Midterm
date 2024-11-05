@@ -8,6 +8,5 @@ import java.util.Optional;
 
 public interface GardenRepository extends JpaRepository<Garden, Integer> {
     Optional<Garden> findByName(String gardenName);
-
     List<Garden> findAll();
 }
